@@ -1,8 +1,6 @@
 package com.example.vladok.rentaddresses.domain;
 
-import java.util.Date;
-
-public class RentAddress {
+public class RentAddress extends BaseEntity {
     private String state;
     private String city;
     private String street;
@@ -11,8 +9,33 @@ public class RentAddress {
 
     private String landLord;
 
-    private Date moovIn;
-    private Date moovOut;
+    private String moovIn;
+    private String moovOut;
+    private String response;
+
+    public String getMoovIn() {
+        return moovIn;
+    }
+
+    public void setMoovIn(String moovIn) {
+        this.moovIn = moovIn;
+    }
+
+    public String getMoovOut() {
+        return moovOut;
+    }
+
+    public void setMoovOut(String moovOut) {
+        this.moovOut = moovOut;
+    }
+
+    public String getResponse() {
+        return response;
+    }
+
+    public void setResponse(String response) {
+        this.response = response;
+    }
 
     public String getState() {
         return state;
@@ -54,21 +77,6 @@ public class RentAddress {
         this.landLord = landLord;
     }
 
-    public Date getMoovIn() {
-        return moovIn;
-    }
-
-    public void setMoovIn(Date moovIn) {
-        this.moovIn = moovIn;
-    }
-
-    public Date getMoovOut() {
-        return moovOut;
-    }
-
-    public void setMoovOut(Date moovOut) {
-        this.moovOut = moovOut;
-    }
 
     @Override
     public String toString() {
@@ -80,8 +88,7 @@ public class RentAddress {
                 ", landLord='" + landLord + '\'' +
                 ", moovIn=" + moovIn +
                 ", moovOut=" + moovOut +
+                ", response='" + response + '\'' +
                 '}';
     }
-
-
 }
