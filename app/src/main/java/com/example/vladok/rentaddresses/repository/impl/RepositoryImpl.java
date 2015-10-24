@@ -5,13 +5,11 @@ import android.database.sqlite.SQLiteDatabase;
 
 import com.example.vladok.rentaddresses.domain.BaseEntity;
 import com.example.vladok.rentaddresses.repository.DBHelper;
-import com.example.vladok.rentaddresses.repository.contracts.Repository;
-import com.example.vladok.rentaddresses.utils.Config;
+import com.example.vladok.rentaddresses.repository.contract.Repository;
+import com.example.vladok.rentaddresses.util.Config;
 
-//@EBean(scope = Scope.Default)
 public abstract class RepositoryImpl<T extends BaseEntity> implements Repository<T> {
 
-//    @SystemService
     private final Context mCtx;
     private DBHelper mDBHelper;
     SQLiteDatabase mDB;
@@ -19,6 +17,7 @@ public abstract class RepositoryImpl<T extends BaseEntity> implements Repository
     public RepositoryImpl(Context ctx) {
         mCtx = ctx;
     }
+
 
     @Override
     public void open() {
@@ -30,7 +29,6 @@ public abstract class RepositoryImpl<T extends BaseEntity> implements Repository
     public void close() {
         if (mDBHelper != null) mDBHelper.close();
     }
-
 
 
 }

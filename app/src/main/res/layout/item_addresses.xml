@@ -14,20 +14,22 @@
         android:gravity="center">
         <TextView
             android:layout_weight="1"
-            android:gravity="center"
+            android:gravity="left"
             android:id="@+id/tvListRentAddress"
             android:layout_height="30dp"
             android:text="275 Chestnut St"
-            android:textSize="21sp"
+            android:textSize="18sp"
             android:textColor="#3C3F41"
             android:textStyle="italic"
             android:typeface="serif"
+            android:layout_marginLeft="10dp"
             android:layout_width="wrap_content">
         </TextView>
         <TextView
             android:layout_weight="1"
-            android:gravity="center"
+            android:gravity="right"
             android:paddingRight="10dp"
+            android:layout_marginRight="10dp"
             android:id="@+id/tvListMoveOutDate"
             android:layout_height="30dp"
             android:text="12.10.2015"

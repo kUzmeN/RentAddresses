@@ -1,3 +1,29 @@
 <resources>
     <string name="app_name">RentAddresses</string>
+    <string name="enter_text">enter text</string>
+    <string name="addCardButton">Add Rent Address</string>
+    <string name="exit">Exit</string>
+    <string name="save_data">Some fields are filled in incorrectly.Exit without changes?</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="saved">Your data has been saved</string>
+    <string name="response">Response from server : </string>
+    <string name="delete">Delete card</string>
+    <string name="msgCorrectDays">Please enter the correct dates!</string>
+    <string name="city_validation_msg">Please enter the correct name of the city!(more than 2 symbols)</string>
+    <string name="lanlord_validation_msg">Please enter the correct name of the state!(more than 2 symbols)</string>
+    <string name="pay_validation_msg">Please enter the correct pay of the rent!(greater than zero)</string>
+    <string name="state_validation_msg">Please enter the correct name of the state!(more than 2 symbols)</string>
+    <string name="street_validation_msg">Please enter the correct name of the street!(more than 2 symbols)</string>
+    <string name="add_address_title">ADD AN ADDRESS</string>
+    <string name="street">Street</string>
+    <string name="city">City</string>
+    <string name="state">State</string>
+    <string name="pay">What I Pay</string>
+    <string name="lanlord">Landlord</string>
+    <string name="company">Company</string>
+    <string name="move_in">Move-in</string>
+    <string name="move_out">Move-out</string>
+    <string name="to">to</string>
+    <string name="no_response">there is no response</string>
 </resources>

@@ -1,32 +1,32 @@
 package com.example.vladok.rentaddresses.domain;
 
+import org.androidannotations.annotations.EBean;
+
+@EBean
 public class RentAddress extends BaseEntity {
     private String state;
     private String city;
     private String street;
-
     private int monthlyRent;
-
     private String landLord;
-
-    private String moovIn;
-    private String moovOut;
+    private String moveIn;
+    private String moveOut;
     private String response;
 
-    public String getMoovIn() {
-        return moovIn;
+    public String getMoveIn() {
+        return moveIn;
     }
 
-    public void setMoovIn(String moovIn) {
-        this.moovIn = moovIn;
+    public void setMoveIn(String moveIn) {
+        this.moveIn = moveIn;
     }
 
-    public String getMoovOut() {
-        return moovOut;
+    public String getMoveOut() {
+        return moveOut;
     }
 
-    public void setMoovOut(String moovOut) {
-        this.moovOut = moovOut;
+    public void setMoveOut(String moveOut) {
+        this.moveOut = moveOut;
     }
 
     public String getResponse() {
@@ -86,8 +86,8 @@ public class RentAddress extends BaseEntity {
                 ", street='" + street + '\'' +
                 ", monthlyRent=" + monthlyRent +
                 ", landLord='" + landLord + '\'' +
-                ", moovIn=" + moovIn +
-                ", moovOut=" + moovOut +
+                ", moveIn='" + moveIn + '\'' +
+                ", moveOut='" + moveOut + '\'' +
                 ", response='" + response + '\'' +
                 '}';
     }
