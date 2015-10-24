@@ -95,9 +95,8 @@ public class RentAddressRepositoryImpl extends RepositoryImpl<RentAddress> imple
     @Override
     public String readResponse(long id) {
         String str = "noresponse";
-        //MyContext.getContext().ge
         str=  MyContext.getContext().getResources().getString(R.string.no_response);
-      //  String str = Resources.getSystem().getString(R.string.no_response);
+      (R.string.no_response);
         String selection = Config.ID + " = ?";
         String[] selectionArgs = new String[]{String.valueOf(id)};
         Cursor c = mDB.query(Config.DB_TABLE_RENT_ADDRESS, null, selection, selectionArgs, null, null, null);
