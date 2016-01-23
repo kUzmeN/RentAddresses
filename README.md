@@ -9,3 +9,6 @@ On a separate screen, allow the user to edit these addresses and add new address
 During development have been used some technologies :
 Java , Volley , CursorLoader , Pattern  - Repository , Android Annotations.
 
+Link to apk file : 
+<https://github.com/kUzmeN/RentAddresses/blob/master/app/RentAddresses.apk>
+
